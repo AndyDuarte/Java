@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Andy-Duarte
+ * @author Author
  */
 public class ejer5 {
 
@@ -18,21 +18,20 @@ public class ejer5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Leer 5 números y mostrarlos en orden inverso al introducido.
+        // Leer 5 números y mostrarlos en el mismo orden introducido.
         Scanner sc = new Scanner(System.in);
-        int arreglo[];
-        arreglo = new int[5];
+        int valores[];
+        valores = new int[5];
         
         for (int i = 0; i < 5; i++) {
-            System.out.println("introduzca un valor ");
-            arreglo[i] = Integer.valueOf(sc.next());
+            System.out.println("Ingrese un numero ");
+            valores[i] = Integer.valueOf(sc.next());
+        }
+        System.out.println("Los valores son ");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(valores[i]);
         }
         
-        System.out.println("Los valores son");
-        
-        for (int i = 4; i >=  0; i--) {
-            System.out.println("El valor es "+ arreglo[i]);
-        }
     }
     
 }
